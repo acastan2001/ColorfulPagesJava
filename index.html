@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Example</title>
+<style>
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    border: 2px solid black;
+    padding: 10px;
+  }
+  .flex-item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+  }
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item" id="box1">Box 1</div>
+  <div class="flex-item" id="box2">Box 2</div>
+  <div class="flex-item" id="box3">Box 3</div>
+</div>
+
+<script>
+  const flexContainer = document.querySelector('.flex-container');
+  flexContainer.style.background = 'lightblue';
+  flexContainer.style.borderStyle = 'dashed';
+  flexContainer.style.borderColor = 'blue';
+  const item1 = document.querySelector('#item1');
+  const item2 = document.querySelector('#item2');
+  const item3 = document.querySelector('#item3');
+// just to make it easier to seperate the 3 items
+  box1.style.background = 'lightgreen';
+  box1.style.borderStyle = 'solid';
+  box1.style.borderColor = 'green';
+  box1.style.color = 'white';
+//
+  box2.style.background = 'lightcoral';
+  box2.style.borderStyle = 'solid';
+  box2.style.borderColor = 'red';
+  box2.style.color = 'white';
+//
+  box3.style.background = 'lightgoldenrodyellow';
+  box3.style.borderStyle = 'solid';
+  box3.style.borderColor = 'goldenrod';
+  box3.style.color = 'black';
+</script>
+
+</body>
+</html>
